@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p>Digite seu país de nascimento</p><input type="text" name="nac" id="inac">
+    <input type="button" value="Verificar" onclick="ver()" >
+    <div id="res"></div>
+    <script>
+        function ver() {
+            var nac = document.getElementById('inac')
+            var res = document.getElementById('res')
+            if (nac.value == 'Brasil') {
+                res.innerHTML = `<p>Vivendo em ${nac.value}, você é brasileiro</p>`
+                } else {
+                    res.innerHTML = `<p>Vivendo em ${nac.value}, você é estrangeiro</p>`
+                }
+        }
+    </script>
+</body>
+</html>
