@@ -21,6 +21,7 @@ switch (diaSem) {
 
     case 3: {
         console.log('Quarta-feira')
+        break
     }
 
     case 4: {
